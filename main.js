@@ -41,9 +41,6 @@ function validateCred(numArr) {
 
 }
 
-// Test functions:
-console.log(validateCred(valid1)); // Should print true
-console.log(validateCred(invalid1)); // Should print false
 
 function findInvalidCards(cards) {
     const invalid = [];
@@ -58,11 +55,6 @@ function findInvalidCards(cards) {
     return invalid;
 }
 
-// Test function
-console.log(findInvalidCards([valid1, valid2, valid3, valid4, valid5])); // Shouldn't print anything
-console.log(findInvalidCards([invalid1, invalid2, invalid3, invalid4, invalid5])); // Should print all of the numbers
-
-console.log(findInvalidCards(batch)); // Test what the mystery numbers are
 
 function idInvalidCardCompanies(invalidBatch) {
     const companies = [];
@@ -94,7 +86,3 @@ function idInvalidCardCompanies(invalidBatch) {
     }
     return companies;
 }
-
-console.log(idInvalidCardCompanies([invalid1])); // Should print['visa']
-console.log(idInvalidCardCompanies([invalid2])); // Should print ['mastercard']
-console.log(idInvalidCardCompanies(batch)); // Find out which companies have mailed out invalid cards
